@@ -146,7 +146,7 @@ public class MainActivity extends ActionBarActivity
     public void setReminder(String paramString)
     {
         this.helper.getReadableDatabase().query("tasks", new String[] { "_id", "time" }, "task=?", new String[] { paramString }, null, null, null).moveToFirst();
-        Handler localHandler = new Handler();
+        Handler handler = new Handler();
         Runnable local3 = new Runnable()
         {
             public void run()
@@ -168,7 +168,7 @@ public class MainActivity extends ActionBarActivity
                 localBuilder.create().show();
             }
         };
-        localHandler.postDelayed(local3, 10000L);
+        handler.postDelayed(local3, 10000L);
     }
 }
 
