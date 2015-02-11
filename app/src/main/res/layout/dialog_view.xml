@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Spinner android:id="@id/categories_spinner" android:background="@drawable/abc_spinner_mtrl_am_alpha" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_weight="50.0" style="@style/Widget.AppCompat.Spinner" />
+    <EditText android:id="@id/task" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="4.0dip" android:layout_marginBottom="4.0dip" android:hint="@string/task_prompt" android:inputType="textShortMessage" />
+</LinearLayout>

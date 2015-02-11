@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@android:drawable/ic_menu_add" android:id="@id/action_add_task" android:title="Add Task" app:showAsAction="always" />
+    <item android:id="@id/categories_menu" android:title="Categories" app:showAsAction="ifRoom">
+        <menu>
+            <item android:id="@id/books" android:title="Books" app:showAsAction="collapseActionView" />
+            <item android:id="@id/movies" android:title="Movies" app:showAsAction="collapseActionView" />
+            <item android:id="@id/music" android:title="Music" app:showAsAction="collapseActionView" />
+            <item android:id="@id/restaurants" android:title="Restaurants" app:showAsAction="collapseActionView" />
+        </menu>
+    </item>
+</menu>
